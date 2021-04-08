@@ -22,11 +22,13 @@ public class MainRoute {
 		Customer john = new Adult();
 		john.name("John");
 		john.age(24);
+		john.showForm();
 		john.welcomeMessage();
 		
 		Customer alice = new Child();
 		alice.name("Alice");
 		alice.age(9);
+		alice.showForm();
 		alice.welcomeMessage();
 
 		LOG.info("-------------------------- LOG FINISH LOG --------------------------");

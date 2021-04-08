@@ -8,14 +8,22 @@ public abstract class Customer {
 
 	String name;
 	Integer age;
+	
+	public Customer() {
+		this.name = "Someone";
+		this.age = 0;
+	}
 
 	public void name(String name) {
 		this.name = name;
-		LOG.info("Your name is {}.", name);
 	}
 
 	public void age(Integer age) {
 		this.age = age;
+	}
+	
+	public void showForm() {
+		LOG.info("Your name is {}.", name);
 		LOG.info("You have {} years old.", age);
 	}
 
