@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import com.rofamex.springboot_oop_v1.abstract_test.Adult;
 import com.rofamex.springboot_oop_v1.abstract_test.Child;
 import com.rofamex.springboot_oop_v1.abstract_test.Customer;
+import com.rofamex.springboot_oop_v1.inheritance_test.Adult3;
+import com.rofamex.springboot_oop_v1.inheritance_test.Child3;
 import com.rofamex.springboot_oop_v1.interface_test.Customer2;
 
 @Component
@@ -14,7 +16,7 @@ public class MainRoute {
 	private static final Logger LOG = LoggerFactory.getLogger(MainRoute.class);
 
 	public MainRoute() {
-		interfaceTest();
+		inheritanceTest();
 	}
 
 	private void abstractTest() {
@@ -51,6 +53,20 @@ public class MainRoute {
 		alice.showForm();
 		alice.save();
 		alice.findByAge(9);
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+
+	private void inheritanceTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		Adult3 john = new Adult3("John", 24);
+		john.showForm();
+		john.companyName("Adidas");
+
+		Child3 alice = new Child3("Alice", 9);
+		alice.showForm();
+		alice.schoolName("Toronto School");
 
 		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
 	}
