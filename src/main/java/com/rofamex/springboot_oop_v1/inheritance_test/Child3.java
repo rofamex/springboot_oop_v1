@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Child3 extends Customer3 {
-	
+
 	public Child3(String name, Integer age) {
 		super(name, age);
 	}
@@ -14,5 +14,5 @@ public class Child3 extends Customer3 {
 	public void schoolName(String schoolName) {
 		LOG.info("Company name is {}.", schoolName);
 	}
-	
+
 }
