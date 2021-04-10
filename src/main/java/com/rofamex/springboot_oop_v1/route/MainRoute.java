@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 import com.rofamex.springboot_oop_v1.abstract_test.Adult;
 import com.rofamex.springboot_oop_v1.abstract_test.Child;
 import com.rofamex.springboot_oop_v1.abstract_test.Customer;
+import com.rofamex.springboot_oop_v1.exception_test.ThrowNewTest;
+import com.rofamex.springboot_oop_v1.exception_test.ThrowsTest;
+import com.rofamex.springboot_oop_v1.exception_test.TryCatchFinallyTest;
 import com.rofamex.springboot_oop_v1.inheritance_test.Adult3;
 import com.rofamex.springboot_oop_v1.inheritance_test.Child3;
 import com.rofamex.springboot_oop_v1.interface_test.Customer2;
@@ -16,7 +19,7 @@ public class MainRoute {
 	private static final Logger LOG = LoggerFactory.getLogger(MainRoute.class);
 
 	public MainRoute() {
-		inheritanceTest();
+		throwsTest();
 	}
 
 	private void abstractTest() {
@@ -67,6 +70,37 @@ public class MainRoute {
 		Child3 alice = new Child3("Alice", 9);
 		alice.showForm();
 		alice.schoolName("Toronto School");
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+
+	private void tryCatchFinallyTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		TryCatchFinallyTest tryCatchFinallyTest = new TryCatchFinallyTest();
+		tryCatchFinallyTest.execute();
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+
+	private void throwNewTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		ThrowNewTest throwNewTest = new ThrowNewTest();
+		throwNewTest.execute();
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+
+	private void throwsTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		ThrowsTest throwsTest = new ThrowsTest();
+		try {
+			throwsTest.execute();
+		} catch (Exception e) {
+			LOG.info(e.getMessage());
+		}
 
 		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
 	}
