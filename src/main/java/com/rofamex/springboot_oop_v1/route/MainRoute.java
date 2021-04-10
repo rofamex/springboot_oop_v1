@@ -19,7 +19,12 @@ public class MainRoute {
 	private static final Logger LOG = LoggerFactory.getLogger(MainRoute.class);
 
 	public MainRoute() {
-		throwsTest();
+//		abstractTest();
+//		interfaceTest();
+//		inheritanceTest();
+//		tryCatchFinallyTest();
+//		throwNewTest();
+//		throwsTest();
 	}
 
 	private void abstractTest() {
