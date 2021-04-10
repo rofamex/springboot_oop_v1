@@ -1,9 +1,9 @@
 OOP (Objective Oriented Programming) like Inheritance, Polymorphism, Abstraction, Encapsulation, Exception handling, collections.
 
 Exception handling  
-    try{}catch(Exception e){}finally{}  
-    throw new ArithmeticException("Access Denied");  
-    public void methodName() throws Exception  
+    -try{}catch(Exception e){}finally{}  
+    -throw new ArithmeticException("Access Denied");  
+    -public void methodName() throws Exception  
 
 Encapsulation  
     Access modifiers:  
