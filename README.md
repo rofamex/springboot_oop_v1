@@ -24,8 +24,9 @@
     * Set<Integer> set = new HashSet<Integer>();  
   * list  
     * List<Integer> list = new ArrayList<Integer>();  
+      * ArrayList is better for storing and accessing data - internally uses a dynamic array to store the elements.
     * Queue<Integer> queue = new LinkedList<Integer>();  
-
+      * LinkedList is better for manipulating data - internally uses a doubly linked list to store the elements.
 
 
 # Project Dependencies
