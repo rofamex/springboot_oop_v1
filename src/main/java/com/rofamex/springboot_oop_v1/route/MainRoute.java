@@ -7,6 +7,10 @@ import org.springframework.stereotype.Component;
 import com.rofamex.springboot_oop_v1.abstract_test.Adult;
 import com.rofamex.springboot_oop_v1.abstract_test.Child;
 import com.rofamex.springboot_oop_v1.abstract_test.Customer;
+import com.rofamex.springboot_oop_v1.collections_test.DequeTest;
+import com.rofamex.springboot_oop_v1.collections_test.ListTest;
+import com.rofamex.springboot_oop_v1.collections_test.MapTest;
+import com.rofamex.springboot_oop_v1.collections_test.SetTest;
 import com.rofamex.springboot_oop_v1.exception_test.ThrowNewTest;
 import com.rofamex.springboot_oop_v1.exception_test.ThrowsTest;
 import com.rofamex.springboot_oop_v1.exception_test.TryCatchFinallyTest;
@@ -25,6 +29,10 @@ public class MainRoute {
 //		tryCatchFinallyTest();
 //		throwNewTest();
 //		throwsTest();
+//		setTest();
+//		listTest();
+//		dequeTest();
+//		mapTest();
 	}
 
 	private void abstractTest() {
@@ -109,5 +117,43 @@ public class MainRoute {
 
 		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
 	}
+
+	private void setTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		SetTest setTest = new SetTest();
+		setTest.execute();
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+
+	private void listTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		ListTest listTest = new ListTest();
+		listTest.execute();
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+
+	private void dequeTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		DequeTest dequeTest = new DequeTest();
+		dequeTest.execute();
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+	
+	private void mapTest() {
+		LOG.info("-------------------------- LOG START LOG ---------------------------");
+
+		MapTest mapTest = new MapTest();
+		mapTest.execute();
+
+		LOG.info("-------------------------- LOG FINISH LOG --------------------------");
+	}
+	
+	
 
 }
