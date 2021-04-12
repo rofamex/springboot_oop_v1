@@ -23,10 +23,13 @@
   * set  
     * Set<Integer> set = new HashSet<Integer>();  
   * list  
-    * List<Integer> list = new ArrayList<Integer>();  
+    * List<Integer> arrayList = new ArrayList<Integer>();  
       * ArrayList is better for storing and accessing data - internally uses a dynamic array to store the elements.
-    * Queue<Integer> queue = new LinkedList<Integer>();  
+    * LinkedList<Integer> linkedList = new LinkedList<Integer>();  
       * LinkedList is better for manipulating data - internally uses a doubly linked list to store the elements.
+  * dequeue
+    * Deque<Integer> deque = new ArrayDeque<Integer>();
+      * ArrayDeque is better than LinkedList - but can't get something inside the middle of the list.
 
 
 # Project Dependencies
