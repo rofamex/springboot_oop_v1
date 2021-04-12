@@ -2,11 +2,11 @@
 
   1. Inheritance  
   * extends  
-    * super  
+  * super  
 
   1. Polymorphism  
   * abstract  
-    * interface  
+  * interface  
 
   1. Encapsulation - access modifiers  
   * private - accessible to the class only.  
