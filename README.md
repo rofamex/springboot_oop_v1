@@ -4,22 +4,22 @@
   * extends  
   * super  
 
-  1. Polymorphism  
+  2. Polymorphism  
   * abstract  
   * interface  
 
-  1. Encapsulation - access modifiers  
+  3. Encapsulation - access modifiers  
   * private - accessible to the class only.  
   * [default] - accessible to the class and package  
   * protected - accessible to class, package, and subclasses  
   * public - accessible to everything  
 
-  1. Exception handling  
+  4. Exception handling  
   * try{}catch(Exception e){}finally{}  
   * throw new ArithmeticException("Access Denied");  
   * public void methodName() throws Exception  
 
-  1. Collections
+  5. Collections
   * set  
     * Set<Integer> set = new HashSet<Integer>();  
   * list  
