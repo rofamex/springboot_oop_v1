@@ -25,9 +25,9 @@
   * list  
     * List<Integer> arrayList = new ArrayList<Integer>();  
       * ArrayList is better for storing and accessing data - internally uses a dynamic array to store the elements.
-    * LinkedList<Integer> linkedList = new LinkedList<Integer>();  
+    * List<Integer> linkedList = new LinkedList<Integer>();  
       * LinkedList is better for manipulating data - internally uses a doubly linked list to store the elements.
-  * dequeue
+  * deque
     * Deque<Integer> deque = new ArrayDeque<Integer>();
       * ArrayDeque is better than LinkedList - but can't get something inside the middle of the list.
 
