@@ -53,7 +53,7 @@ Due to this behavior, a priority queue can be used to sort the elements.
 # Project Dependencies
 
 ## Developer Tools  
-  ###### Spring Boot DevTools
+###### Spring Boot DevTools
 
 ## Web  
-  ###### Spring Web
+###### Spring Web
